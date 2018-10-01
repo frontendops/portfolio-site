@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Jumbotron, Grid, Row, Col, Image, Button} from 'react-bootstrap';
+import { Jumbotron, Grid, Image, Button} from 'react-bootstrap';
+import "./LandingPage.css"
 
 class LandingPage extends Component {
   render() {
@@ -9,12 +10,13 @@ class LandingPage extends Component {
         <Grid>
             <Jumbotron>
                 <h2>Welcome to My Portfolio</h2>
-                <p>i</p>
+                <p>Good Evening</p>
+                <Image src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" circle className="icon" />
+                    <Link to="/about">
+                        <Button bsStyle="primary"> About</Button>
+                    </Link>
             </Jumbotron>
 
-            <Link to="/about">
-                <Button bsStyle="primary"> About</Button>
-            </Link>
         </Grid>
 
         </fragment>
