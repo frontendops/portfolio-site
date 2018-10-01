@@ -1,26 +1,22 @@
 import React, { Component } from 'react';
 import LandingPage from './components/LandingPage';
 import About from './components/About';
+import Navbar from './components/CustomNavBar';
 
-import { Route } from 'react-router-dom';
+
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 
 class App extends Component {
-    
+
   render() {
     return (
-        <fragment>
-            <Route exact path="/" render={() =>(
-                  <LandingPage
-                  />
-              )} />
-
-          <Route exact path="/about" render={() =>(
-                    <About/>
-                )} />
-
-        </fragment>
-
+            <Router>
+                <div>
+                    <Navbar />
+                    <Route exact path="/" component={LandingPage} />
+                </div>
+            </Router>
     );
   }
 }

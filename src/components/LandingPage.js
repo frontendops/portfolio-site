@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Jumbotron, Grid, Row, Col, Image, Button} from 'react-bootstrap';
 
-class NavBar extends Component {
+class LandingPage extends Component {
   render() {
     return (
         <fragment>
@@ -11,7 +11,7 @@ class NavBar extends Component {
                 <h2>Welcome to My Portfolio</h2>
                 <p>i</p>
             </Jumbotron>
-            
+
             <Link to="/about">
                 <Button bsStyle="primary"> About</Button>
             </Link>
@@ -23,4 +23,4 @@ class NavBar extends Component {
   }
 }
 
-export default NavBar;
+export default LandingPage;
