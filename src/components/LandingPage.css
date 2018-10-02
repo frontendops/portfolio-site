@@ -1,4 +1,26 @@
 .icon {
     animation: App-logo-spin infinite 20s linear;
-    height: 80px;
+    height: 100px;
+}
+
+.icon:hover {
+    height: 102px;
+    transition: transform .25s ease;
+}
+
+.stars {
+    height: 90vh;
+  z-index: 0;
+  background: #000 url("https://image.ibb.co/mjnygo/stars.png") repeat top center;
+}
+
+.col-sm-4 {
+    padding-top: 15px;
+}
+
+h2 {
+    color: white;
+}
+p {
+    color: #CCCCCC;
 }

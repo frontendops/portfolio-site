@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Jumbotron, Grid, Image, Button} from 'react-bootstrap';
+import { Jumbotron, Grid, Row, Col, Image, Button} from 'react-bootstrap';
 import "./LandingPage.css"
 
 class LandingPage extends Component {
@@ -8,15 +8,22 @@ class LandingPage extends Component {
     return (
         <fragment>
         <Grid>
-            <Jumbotron>
-                <h2>Welcome to My Portfolio</h2>
-                <p>Good Evening</p>
-                <Image src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" circle className="icon" />
-                    <Link to="/about">
-                        <Button bsStyle="primary"> About</Button>
-                    </Link>
+            <Jumbotron className="stars">
+                <Grid>
+                    <Row>
+                        <Col xs={12} sm={8}>
+                            <h2>Front-End Developer</h2>
+                            <p>Alejandro Sierra</p>
+                            <Link to="/about">
+                                <Button bsStyle="info"> About</Button>
+                            </Link>
+                        </Col>
+                        <Col xs={12} sm={4}>
+                            <Image src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" circle className="icon" />
+                        </Col>
+                    </Row>
+                </Grid>
             </Jumbotron>
-
         </Grid>
 
         </fragment>
