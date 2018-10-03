@@ -9,7 +9,7 @@ class Contact extends Component {
             <Grid>
                 <Row>
                     <Col xs={12} sm={8} smOffset={2} >
-                        <h3>Interested in making an application,Blog, store?, Personal Questions, Concerns or need some help? Send Me an Email! asdfs</h3>
+                        <h3 className="contact-text">Let me know what you need</h3>
                     </Col>
                 </Row>
             </Grid>

@@ -4,6 +4,7 @@ import About from './components/About';
 import Navbar from './components/CustomNavBar';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Footer from './components/Footer'
 
 
 
@@ -21,7 +22,7 @@ class App extends Component {
                     <Route path="/about" component={About} />
                     <Route path="/projects" component={Projects} />
                     <Route path="/contact" component={Contact} />
-
+                    <Footer />
                 </div>
             </Router>
     );

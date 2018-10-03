@@ -1,3 +1,6 @@
+/*
+* Landing page
+*/
 .icon {
     animation: App-logo-spin infinite 20s linear;
     height: 100px;
@@ -18,9 +21,53 @@
     padding-top: 15px;
 }
 
+.tech {
+    text-align: center;
+}
+
+.for-you {
+    text-align: center;
+}
+
 h2 {
-    color: white;
+    color: grey;
 }
 p {
-    color: #CCCCCC;
+    color: grey;
+}
+
+
+/*
+* contact page
+*/
+
+.contact-me {
+    width: 60vw;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contact-text {
+    text-align: center;
+}
+
+.more-info {
+    text-align: center;
+}
+
+/*
+* footer
+*/
+
+footer {
+    margin-top: 75px;
+    padding-top: 50px;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer p {
+    color: black;
 }
