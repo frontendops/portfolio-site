@@ -6,8 +6,8 @@ class About extends Component {
   render() {
     return (
         <fragment>
-            <Row className="show-grid text-center">
-                <Col xs={12} sm={4} className="person-wrapper">
+            <Row className="text-center container">
+                <Col xs={12} sm={5}>
                     <h3>Alejandro Sierra</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliter autem vobis placet. His singulis copiose responderi solet,
                         sed quae perspicua sunt longa esse non debent. Est igitur officium eius generis, quod nec in bonis ponatur nec in contrariis.
@@ -19,7 +19,12 @@ class About extends Component {
                         Animi enim quoque dolores percipiet omnibus partibus maiores quam corporis. Hoc est non modo cor non habere, sed ne palatum quidem. Facile est hoc cernere
                          in primis puerorum aetatulis. Nam, ut saepe iam dixi, in infirma aetate inbecillaque mente vis naturae quasi per caliginem cernitur; Paria sunt igitur.
                      </p>
+                </Col>
 
+                <Col xs={12} sm={7} >
+                    <div className="resume">
+                        resume cv portfolio
+                    </div>
                 </Col>
 
             </Row>

@@ -49,7 +49,7 @@ class LandingPage extends Component {
                 <Row>
                     <Col xs={12} md={6}>
                         <h2>If You need a project</h2>
-                        <h3>Want to start a Blog? Need to showcase your talent and hard Work? Need a Website to work for your buisness 24/7? Or want to hire me at your company?</h3>
+                        <h3>Want to start a Blog? Need to showcase your talent and hard Work? Need a Website to work for your buisness 24/7? Want to hire me at your company? Or do you need a tutor?</h3>
 
                     </Col>
                 </Row>
