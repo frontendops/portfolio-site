@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { Row, Col} from 'react-bootstrap';
 
 
 class About extends Component {
   render() {
     return (
-        <fragment>
+        <Fragment>
             <Row className="text-center container">
                 <Col xs={12} sm={5}>
                     <h3>Alejandro Sierra</h3>
@@ -28,7 +28,7 @@ class About extends Component {
                 </Col>
 
             </Row>
-        </fragment>
+        </Fragment>
 
     );
   }

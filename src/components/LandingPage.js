@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { Jumbotron, Grid, Row, Col, Image, Button} from 'react-bootstrap';
 import "./LandingPage.css"
@@ -6,7 +6,7 @@ import "./LandingPage.css"
 class LandingPage extends Component {
   render() {
     return (
-        <fragment>
+        <Fragment>
         <Grid>
             <Jumbotron className="stars">
                 <Grid>
@@ -73,7 +73,7 @@ class LandingPage extends Component {
             </div>
 
         </Grid>
-        </fragment>
+    </Fragment>
 
     );
   }
