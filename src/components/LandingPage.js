@@ -14,9 +14,7 @@ class LandingPage extends Component {
                         <Col xs={12} sm={8}>
                             <h2>Front-End Developer</h2>
                             <p>Alejandro Sierra</p>
-                            <Link to="/about">
-                                <Button bsStyle="info"> About</Button>
-                            </Link>
+                                <Button bsStyle="info"> Explore</Button>
                         </Col>
                         <Col xs={12} sm={4}>
                             <Image src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" circle className="icon" />
@@ -61,15 +59,19 @@ class LandingPage extends Component {
             </Jumbotron>
 
             <div className="contact-me">
-                <Button bsSize="large" bsStyle="info" block>Contact Me</Button>
+                <Link to="/contact" >
+                    <Button bsSize="large" bsStyle="info" block>Contact Me</Button>
+                </Link>
+
             </div>
 
             <div className="more-info">
                 <h1>Need to know more?</h1>
                 <h3>Dont worry </h3>
 
-                <Button>Projects</Button>
-                <Button>About Me</Button>
+                <Link to="/projects"> <Button>Projects</Button> </Link>
+                
+                <Link to="/about"> <Button>About Me</Button> </Link>
             </div>
 
         </Grid>

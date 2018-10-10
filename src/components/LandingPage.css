@@ -38,6 +38,66 @@ p {
 
 
 /*
+* projects page
+*/
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    padding-left: 0px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+.project-entry {
+    height: 300px;
+    width: 350px;
+    margin: 10px;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    display: inline-block;
+}
+
+.overlay {
+    position: absolute;
+    background-color: #eee;
+    opacity: 0;
+    transition: all 0.5s ease;
+
+}
+
+.project-entry:hover .overlay {
+    opacity: 1;
+}
+
+.overlay p {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.overlay-bottom {
+    height: 0%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.project-entry:hover .overlay-bottom {
+    height: 100%;
+}
+
+.project-entry img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+/*
 * contact page
 */
 
@@ -65,7 +125,7 @@ p {
 }
 
 .row {
-    
+
 }
 /*
 * footer

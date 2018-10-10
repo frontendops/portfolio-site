@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { Jumbotron, Grid, Row, Col, Image, Button} from 'react-bootstrap';
 
@@ -8,34 +8,39 @@ class Projects extends Component {
             {"name": "Memory game",
              "tech": "JS",
              "description": "Card Matching game that uses vanilla javascript",
-             "img": ""
+             "img": "/img/grass.jpg",
+             "id": "1"
             },
             {"name": "Neighborhood Map",
              "tech": "JS, React",
              "description": "Map of my local city with selected venues using google maps api and foursquare api",
-             "img": ""
+             "img": "/img/mountain1.jpg",
+             "id": "2"
             },
             {"name": "Wordpress Site Buisness",
              "tech": "Wordpress",
              "description": "Wordpress site for hair salon built with wordpress",
-             "img": ""
+             "img": "/img/mountain2.jpg",
+             "id": "3"
             },
             {"name": "Wordpress Site Blog",
              "tech": "Wordpress",
              "description": "Blog for anime channel built with wordpress",
-             "img": ""
+             "img": "/img/iceland.jpg",
+             "id": "4"
             },
             {"name": "This Site",
              "tech": "JS, React",
              "description": "Using react, bootstrap, and good old javascript ",
-             "img": ""
+             "img": "/img/night.jpg",
+             "id": "5"
             },
         ]
     }
 
   render() {
     return (
-        <fragment>
+        <Fragment>
             <Grid>
                 <Row>
                     <Col xs={12} sm={8} smOffset={2} >
@@ -45,13 +50,18 @@ class Projects extends Component {
 
                 <Row>
                     <Col>
-                        <ul>
+                        <ul className="projects">
                             { this.state.projects.map( (project) => {
                                 return (
-                                    <li>
-                                        <p>{project.name}</p>
-                                        <p>{project.tech}</p>
-                                        <p>{project.description}</p>
+                                    <li key={project.id} className="project-entry">
+                                        <img src={project.img} />
+
+                                        <div className="overlay overlay-bottom">
+                                            <p>{project.name}</p>
+                                            <p>{project.tech}</p>
+                                            <p>{project.description}</p>
+                                        </div>
+
                                     </li>
                                 )
                             })
@@ -61,7 +71,7 @@ class Projects extends Component {
                     </Col>
                 </Row>
             </Grid>
-        </fragment>
+        </Fragment>
 
     );
   }
