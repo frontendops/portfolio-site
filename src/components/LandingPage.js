@@ -8,20 +8,24 @@ class LandingPage extends Component {
     return (
         <Fragment>
         <Grid>
-            <Jumbotron className="stars">
+            <div className="stars">
                 <Grid>
                     <Row>
-                        <Col xs={12} sm={8}>
+                        <Col xs={12} align="center" className="align-middle">
                             <h2>Front-End Developer</h2>
-                            <p>Alejandro Sierra</p>
+                            <h3>Alejandro Sierra</h3>
                                 <Button bsStyle="info"> Explore</Button>
                         </Col>
-                        <Col xs={12} sm={4}>
+                    </Row>
+
+                    <Row>
+                        <Col xs={12} align="center">
                             <Image src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" circle className="icon" />
                         </Col>
                     </Row>
+
                 </Grid>
-            </Jumbotron>
+            </div>
 
             <Row className="tech">
                 <Col xs={12}md={4}>
@@ -41,22 +45,28 @@ class LandingPage extends Component {
                 </Col>
             </Row>
 
-            <Jumbotron>
-                <h2 className="for-you">This Means</h2>
+            <div className="mountain-paralax">
 
-                <Row>
-                    <Col xs={12} md={6}>
+            </div>
+
+                <h2 align="center">So, If you.....</h2>
+
+                <Row className="for-you" align="center">
+                    <Col xs={12} md={6} >
                         <h2>If You need a project</h2>
                         <h3>Want to start a Blog? Need to showcase your talent and hard Work? Need a Website to work for your buisness 24/7? Want to hire me at your company? Or do you need a tutor?</h3>
-
+                    </Col>
+                    <Col xs={12} md={6} >
+                        <div className="vector-container">
+                            <div className="item a"></div>
+                            <div className="item b"><img src="/img/gears.png" /></div>
+                            <div className="item c"></div>
+                            <div className="item d"><img src="/img/programming.png" /></div>
+                            <div className="item e"></div>
+                            <div className="item f"><img src="/img/coding.png" /></div>
+                        </div>
                     </Col>
                 </Row>
-            </Jumbotron>
-
-            <Jumbotron>
-                <h2 className="for-you">To make your life easier</h2>
-                <h3>seriously technology rocks</h3>
-            </Jumbotron>
 
             <div className="contact-me">
                 <Link to="/contact" >
@@ -70,7 +80,7 @@ class LandingPage extends Component {
                 <h3>Dont worry </h3>
 
                 <Link to="/projects"> <Button>Projects</Button> </Link>
-                
+
                 <Link to="/about"> <Button>About Me</Button> </Link>
             </div>
 

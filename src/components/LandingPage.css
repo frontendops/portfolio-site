@@ -1,5 +1,14 @@
+body, html {
+    height: 100%;
+}
+
+.navbar-default {
+    background-image: none;
+    background-color: rgb(50, 50, 50);
+}
+
 /*
-* Landing page
+* Landing page ------------------------------------------------------------------------
 */
 .icon {
     animation: App-logo-spin infinite 20s linear;
@@ -11,10 +20,25 @@
     transition: transform .25s ease;
 }
 
+.container {
+    width: 100%;
+}
+
 .stars {
+    display: flex;
+    align-items: center;
     height: 90vh;
-  z-index: 0;
-  background: #000 url("https://image.ibb.co/mjnygo/stars.png") repeat top center;
+    width: 100%;
+    z-index: 0;
+    background: #000 url("https://image.ibb.co/mjnygo/stars.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.stars h3 {
+    color: white;
 }
 
 .col-sm-4 {
@@ -23,22 +47,51 @@
 
 .tech {
     text-align: center;
+    background-image: url('/img/star-sky.jpg');
+    background-size: cover;
+}
+
+.tech p {
+    color: white;
+    font-size: 16px;
+}
+
+.tech.row {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 25px;
 }
 
 .for-you {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 25px;
     text-align: center;
+    background-color: grey;
+    word-wrap: break-word;
 }
 
-h2 {
-    color: grey;
+.vector-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
 }
-p {
-    color: grey;
+
+.vector-container img {
+    max-width: 100%;
+}
+
+.item {
+  color: white;
+  font-size: 2em;
 }
 
 
 /*
-* projects page
+* projects page ------------------------------------------------------------------------
 */
 
 .projects {
@@ -70,7 +123,7 @@ p {
 }
 
 .project-entry:hover .overlay {
-    opacity: 1;
+    opacity: .8;
 }
 
 .overlay p {
@@ -98,7 +151,7 @@ p {
 }
 
 /*
-* contact page
+* contact page ------------------------------------------------------------------------
 */
 
 .contact-me {
@@ -111,24 +164,103 @@ p {
     text-align: center;
 }
 
+.form-style-8{
+    font-family: 'Open Sans Condensed', arial, sans;
+    width: 500px;
+    padding: 30px;
+    background: #FFFFFF;
+    margin: 50px auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+
+}
+.form-style-8 h2{
+    background: #4D4D4D;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #797979;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 20px;
+    margin: -30px -30px 30px -30px;
+}
+.form-style-8 input[type="text"],
+.form-style-8 input[type="email"],
+.form-style-8 input[type="number"],
+.form-style-8 textarea,
+.form-style-8 select
+{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    margin-bottom: 10px;
+    font: 16px Arial, Helvetica, sans-serif;
+    height: 45px;
+}
+.form-style-8 textarea{
+    resize:none;
+    overflow: hidden;
+}
+.form-style-8 input[type="button"],
+.form-style-8 input[type="submit"]{
+    -moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+    box-shadow: inset 0px 1px 0px 0px #45D6D6;
+    background-color: #2CBBBB;
+    border: 1px solid #27A0A0;
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 14px;
+    padding: 8px 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.form-style-8 input[type="button"]:hover,
+.form-style-8 input[type="submit"]:hover {
+    background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
+    background-color:#34CACA;
+}
+
 .more-info {
     text-align: center;
 }
 
 /*
-* about
+* about ------------------------------------------------------------------------
 */
 
+.about {
+    margin:0 auto;
+    max-width: 1200px;
+}
 
 .resume {
-    background-color: green;
+    background-color: grey;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px
 }
 
-.row {
 
+.profile-img {
+    height: 200px;
+    width: 200px;
 }
+
+
 /*
-* footer
+* footer ------------------------------------------------------------------------
 */
 
 footer {

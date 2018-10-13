@@ -24,10 +24,12 @@ class Contact extends Component {
             <Grid>
                 <Row>
                     <Col xs={12} sm={8} smOffset={2} >
-                        <h3 className="contact-text">Let me know what you need</h3>
+                        <h3 className="contact-text">Please fill out each field</h3>
                     </Col>
                 </Row>
                 <Row>
+                    <div className="form-style-8">
+                        <h2>write your info in here</h2>
                     <form>
                         <label>Name:
                             <input type="text" name="name" value={this.state.name} onChange={this.handleChange}  placeholder="john doe" />
@@ -38,12 +40,12 @@ class Contact extends Component {
                         <label>Subject:
                             <input type="text" name="subject" value={this.state.content} onChange={this.handleChange} placeholder="I need a project" />
                         </label>
-                        <label>Your Message:
-                            <input type="text" name="message" value={this.state.content} onChange={this.handleChange}  />
-                        </label>
+                        <textarea placeholder="Message" name="message" onChange={this.handleChange} ></textarea>
+
                     <input type="submit" value="submit" onClick={this.handleSubmit} />
 
                     </form>
+                </div>
                 </Row>
             </Grid>
         </Fragment>

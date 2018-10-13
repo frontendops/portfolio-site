@@ -1,13 +1,17 @@
 import React, { Component, Fragment } from 'react';
-import { Row, Col} from 'react-bootstrap';
+import { Row, Col, Image} from 'react-bootstrap';
 
 
 class About extends Component {
+    state = {
+
+    }
   render() {
     return (
         <Fragment>
-            <Row className="text-center container">
-                <Col xs={12} sm={5}>
+            <Row className="text-center about" >
+                <Col xs={12} sm={5} >
+                    <Image src="https://auiphoto.files.wordpress.com/2015/09/eiffel-tower-rule-of-thirds.jpg" circle className="profile-img"/>
                     <h3>Alejandro Sierra</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliter autem vobis placet. His singulis copiose responderi solet,
                         sed quae perspicua sunt longa esse non debent. Est igitur officium eius generis, quod nec in bonis ponatur nec in contrariis.
@@ -22,8 +26,9 @@ class About extends Component {
                 </Col>
 
                 <Col xs={12} sm={7} >
+                    <h2>Resume</h2>
                     <div className="resume">
-                        resume cv portfolio
+
                     </div>
                 </Col>
 
