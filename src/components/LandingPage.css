@@ -47,12 +47,10 @@ body, html {
 
 .tech {
     text-align: center;
-    background-image: url('/img/star-sky.jpg');
     background-size: cover;
 }
 
 .tech p {
-    color: white;
     font-size: 16px;
 }
 
@@ -62,12 +60,18 @@ body, html {
     margin-top: 25px;
 }
 
+.mountain-paralax {
+    background-image: url('/img/star-sky.jpg');
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .for-you {
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-top: 25px;
+    margin: 25px 0px;
     text-align: center;
-    background-color: grey;
     word-wrap: break-word;
 }
 
@@ -87,6 +91,29 @@ body, html {
 .item {
   color: white;
   font-size: 2em;
+}
+
+.mountain-base {
+    background-image: url('/img/mountain-base.png');
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.contact-me {
+    padding-top: 25px;
+}
+
+.more-info {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.more-info button {
+    margin: 5px;
 }
 
 
@@ -229,10 +256,6 @@ body, html {
 .form-style-8 input[type="submit"]:hover {
     background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
     background-color:#34CACA;
-}
-
-.more-info {
-    text-align: center;
 }
 
 /*

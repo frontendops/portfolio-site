@@ -29,24 +29,23 @@ class LandingPage extends Component {
 
             <Row className="tech">
                 <Col xs={12}md={4}>
-                    <h1>Test</h1>
+                    <h1>Stage 1</h1>
                     <h3>HTML CSS BOOTSTRAP</h3>
                     <p>Quae qui non vident, nihil umquam magnum ac cognitione dignum amaverunt. Itaque primos congressus copulationesque et consuetudinum instituendarum voluntates fieri propter voluptatem; Illis videtur, qui illud non dubitant bonum dicere -; Non pugnem cum homine, cur tantum habeat in natura boni; Callipho ad virtutem nihil adiunxit nisi voluptatem, Diodorus vacuitatem doloris. In quibus doctissimi illi veteres inesse quiddam caeleste et divinum putaverunt. Venit enim mihi Platonis in mentem, quem accepimus primum hic disputare solitum; An vero displicuit ea, quae tributa est animi virtutibus tanta praestantia?</p>
                 </Col>
                 <Col xs={12}md={4}>
-                    <h1>Test</h1>
+                    <h1>Stage 2</h1>
                     <h3>JS & PHP</h3>
                     <p>Quae qui non vident, nihil umquam magnum ac cognitione dignum amaverunt. Itaque primos congressus copulationesque et consuetudinum instituendarum voluntates fieri propter voluptatem; Illis videtur, qui illud non dubitant bonum dicere -; Non pugnem cum homine, cur tantum habeat in natura boni; Callipho ad virtutem nihil adiunxit nisi voluptatem, Diodorus vacuitatem doloris. In quibus doctissimi illi veteres inesse quiddam caeleste et divinum putaverunt. Venit enim mihi Platonis in mentem, quem accepimus primum hic disputare solitum; An vero displicuit ea, quae tributa est animi virtutibus tanta praestantia?</p>
                 </Col>
                 <Col xs={12}md={4}>
-                    <h1>Test</h1>
+                    <h1>Stage 3</h1>
                     <h3>React.js</h3>
                     <p>Quae qui non vident, nihil umquam magnum ac cognitione dignum amaverunt. Itaque primos congressus copulationesque et consuetudinum instituendarum voluntates fieri propter voluptatem; Illis videtur, qui illud non dubitant bonum dicere -; Non pugnem cum homine, cur tantum habeat in natura boni; Callipho ad virtutem nihil adiunxit nisi voluptatem, Diodorus vacuitatem doloris. In quibus doctissimi illi veteres inesse quiddam caeleste et divinum putaverunt. Venit enim mihi Platonis in mentem, quem accepimus primum hic disputare solitum; An vero displicuit ea, quae tributa est animi virtutibus tanta praestantia?</p>
                 </Col>
             </Row>
 
             <div className="mountain-paralax">
-
             </div>
 
                 <h2 align="center">So, If you.....</h2>
@@ -59,14 +58,17 @@ class LandingPage extends Component {
                     <Col xs={12} md={6} >
                         <div className="vector-container">
                             <div className="item a"></div>
-                            <div className="item b"><img src="/img/gears.png" /></div>
+                            <div className="item b"><img src="/img/programming.png" /></div>
                             <div className="item c"></div>
-                            <div className="item d"><img src="/img/programming.png" /></div>
+                            <div className="item d"><img src="/img/gears.png" /></div>
                             <div className="item e"></div>
                             <div className="item f"><img src="/img/coding.png" /></div>
                         </div>
                     </Col>
                 </Row>
+
+            <div className="mountain-base">
+            </div>
 
             <div className="contact-me">
                 <Link to="/contact" >
@@ -82,6 +84,9 @@ class LandingPage extends Component {
                 <Link to="/projects"> <Button>Projects</Button> </Link>
 
                 <Link to="/about"> <Button>About Me</Button> </Link>
+
+                <Button>Linked In</Button>
+
             </div>
 
         </Grid>
