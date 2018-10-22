@@ -24,12 +24,12 @@ class Contact extends Component {
             <Grid>
                 <Row>
                     <Col xs={12} sm={8} smOffset={2} >
-                        <h3 className="contact-text">Please fill out each field</h3>
+                        <h3 className="contact-text">Let me know how I can help</h3>
                     </Col>
                 </Row>
                 <Row>
                     <div className="form-style-8">
-                        <h2>write your info in here</h2>
+                        <h2>Please fill out each field</h2>
                     <form>
                         <label>Name:
                             <input type="text" name="name" value={this.state.name} onChange={this.handleChange}  placeholder="john doe" />
