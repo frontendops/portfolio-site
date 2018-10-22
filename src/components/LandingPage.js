@@ -71,9 +71,10 @@ class LandingPage extends Component {
             </div>
 
             <div className="contact-me">
-                <Link to="/contact" >
+                <a href="mailto:contact@minimalmvnt.com?subject=Feedback">
                     <Button bsSize="large" bsStyle="info" block>Contact Me</Button>
-                </Link>
+                </a>
+
 
             </div>
 
@@ -85,7 +86,13 @@ class LandingPage extends Component {
 
                 <Link to="/about"> <Button>About Me</Button> </Link>
 
-                <Button>Linked In</Button>
+                <a href="https://www.linkedin.com/in/alejandro-sierra-9320a1164">
+                    <Button>Linked In</Button>
+                </a>
+
+                <a href="https://github.com/frontendops">
+                    <Button>github</Button>
+                </a>
 
             </div>
 
