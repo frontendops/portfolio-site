@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import { Jumbotron, Grid, Row, Col, Image, Button} from 'react-bootstrap';
+import { Grid, Row, Col, Image, Button} from 'react-bootstrap';
 import "./LandingPage.css"
 
 class LandingPage extends Component {
@@ -14,7 +14,7 @@ class LandingPage extends Component {
                         <Col xs={12} align="center" className="align-middle">
                             <h2>Front-End Developer</h2>
                             <h3>Alejandro Sierra</h3>
-                                <Button bsStyle="info"> Explore</Button>
+                                <button className="btnMain draw-border">Explore</button>
                         </Col>
                     </Row>
 
@@ -31,17 +31,17 @@ class LandingPage extends Component {
                 <Col xs={12}md={4}>
                     <h1>Research</h1>
                     <h3>HTML CSS BOOTSTRAP</h3>
-                    <p>I create content that will be read by your browser and shown on whatever device you are using. This content will be accessable so everyone can be able to experience your site. Clean and user friendly styling will make it easy for useres to know whats going on, and let them do exactly what they want in the shortest amount of time and want them to keep coming back.</p>
+                    <p>I create content on the web with a focus on reaching the most amount of people. Through researching and prototyping what would work best for your project, This content will be accessible so everyone can be able to experience your site. Clean and user-friendly styling will make it easy for users to know what's going on, and let them do exactly what they want in the shortest amount of time and want them to keep coming back.</p>
                 </Col>
                 <Col xs={12}md={4}>
-                    <h1>Stage 2</h1>
+                    <h1>The build</h1>
                     <h3>JS & PHP</h3>
-                    <p>Im here to solve your problems, better way to keep track of customer appointments? done that. Want to post daily, weekly content for your following? Ill make it as easy as possible for you. </p>
+                    <p>Solving problems is really my main job. From finding a way for a business to keep track of clients, to experimenting with designs to find the most effective way for someone to showcase their best work. Not only this but making sure my code is well written and maintainable so future developers or future me, can figure out how to add on new features is critical. After all, this is part of the work I do and I love the rewarding feeling of making these ideas into reality.</p>
                 </Col>
                 <Col xs={12}md={4}>
                     <h1>Deployment</h1>
                     <h3>React.js Node.js</h3>
-                    <p>No matter what type of application or site you need, I will use the latest technologies to make sure your project is up to date and running smoothly.</p>
+                    <p>No matter what type of application or site you need, I will use the latest technologies to make sure your project is up to date and running smoothly. You can use a preferred hosting service, or if you don't i will help you get set up. Feel free to send me an email if you need to clarify something or want a change during or after the process.</p>
                 </Col>
             </Row>
 
@@ -58,27 +58,27 @@ class LandingPage extends Component {
                     <Col xs={12} md={6} >
                         <div className="vector-container">
                             <div className="item a"></div>
-                            <div className="item b"><img src="/img/programming.png" /></div>
+                            <div className="item b"><img src="/img/programming.png" alt="computer with code"/></div>
                             <div className="item c"></div>
-                            <div className="item d"><img src="/img/gears.png" /></div>
+                            <div className="item d"><img src="/img/gears.png" alt="3 gears spinning"/></div>
                             <div className="item e"></div>
-                            <div className="item f"><img src="/img/coding.png" /></div>
+                            <div className="item f"><img src="/img/coding.png" alt="syntax of html"/></div>
                         </div>
                     </Col>
                 </Row>
 
             <div className="mountain-base">
+                <div className="contact-me">
+                    <a href="mailto:contact@minimalmvnt.com?subject=Feedback">
+                        <Button bsSize="large" bsStyle="info" block>Contact Me</Button>
+                    </a>
+                    <a className="email" href="mailto:contact@minimalmvnt.com?subject=Feedback">contact@minimalmvnt.com</a>
+
+                </div>
 
             </div>
 
-            <div className="contact-me">
-                <a href="mailto:contact@minimalmvnt.com?subject=Feedback">
-                    <Button bsSize="large" bsStyle="info" block>Contact Me</Button>
-                </a>
-                <a href="mailto:contact@minimalmvnt.com?subject=Feedback">contact@minimalmvnt.com</a>
 
-
-            </div>
 
             <div className="more-info">
                 <h1>Need to know more?</h1>

@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react';
-import { Link } from 'react-router-dom';
 import { Grid, Row, Col } from 'react-bootstrap';
 
 class Projects extends Component {
@@ -10,36 +9,34 @@ class Projects extends Component {
              "description": "Card Matching game that uses vanilla javascript",
              "img": "/img/memory_app.JPEG",
              "link": "",
-             "id": "1"
+             "id": "1",
+             "alt":"Man holding phone with memory game"
             },
             {"name": "Neighborhood Map",
              "tech": "JS, React",
              "description": "Map of my local city with selected venues using google maps api and foursquare api",
-             "img": "/img/mountain1.jpg",
-             "link": "",
-             "id": "2"
+             "img": "/img/map_screen.JPEG",
+             "link": "https://github.com/frontendops/My-neighborhood-map",
+             "id": "2",
+             "alt":""
             },
             {"name": "Wordpress Site Buisness",
              "tech": "Wordpress",
              "description": "Wordpress site for hair salon built with wordpress",
              "img": "/img/salon_site.JPEG",
              "link": "http://www.salonexclusivo.com",
-             "id": "3"
+             "id": "3",
+             "alt":"Man holding phone with salon site open"
             },
             {"name": "Wordpress Site Blog",
              "tech": "Wordpress",
              "description": "Blog for anime channel built with wordpress",
              "img": "/img/envoy_site.JPEG",
              "link": "http://www.easternenvoy.com",
-             "id": "4"
+             "id": "4",
+             "alt":"Computer screen with blogs open"
             },
-            {"name": "This Site",
-             "tech": "JS, React",
-             "description": "Using react, bootstrap, and good old javascript ",
-             "img": "/img/night.jpg",
-             "link": "",
-             "id": "5"
-            },
+
         ]
     }
 
@@ -49,7 +46,7 @@ class Projects extends Component {
             <Grid>
                 <Row>
                     <Col xs={12} sm={8} smOffset={2} >
-                        <h1>Hello World these are the projects that i have crafted. My attention to detail and everything</h1>
+                        <h1>Hello World! These are some of the projects ive been working on.</h1>
                     </Col>
                 </Row>
 
@@ -59,7 +56,7 @@ class Projects extends Component {
                             { this.state.projects.map( (project) => {
                                 return (
                                     <li key={project.id} className="project-entry">
-                                        <img src={project.img} />
+                                        <img src={project.img} alt={project.alt}/>
                                         <a href={project.link} target="_blank">
                                             <div className="overlay overlay-bottom">
                                                 <p>{project.name}</p>

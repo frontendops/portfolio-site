@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { Link } from 'react-router-dom';
-import { Jumbotron, Grid, Row, Col, Image, Button} from 'react-bootstrap';
+import { Grid, Row, Col } from 'react-bootstrap';
 
 class Contact extends Component {
     state = {

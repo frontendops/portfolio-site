@@ -1,5 +1,6 @@
 body, html {
     height: 100%;
+    font-family: 'Open Sans', Arial, sans-serif;
 }
 
 .navbar-default {
@@ -36,9 +37,13 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.stars h2 {
+    font-weight: bold;
+    color: #58afd1;
+}
 .stars h3 {
     color: white;
+
 }
 
 .col-sm-4 {
@@ -84,6 +89,9 @@ body, html {
     text-align: center;
     word-wrap: break-word;
 }
+.for-you h2 {
+    font-weight: bold;
+}
 
 .vector-container {
     display: grid;
@@ -110,13 +118,23 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
 
+.mountain-base .email {
+    color: white;
 }
 
 .contact-me {
     padding-top: 25px;
     text-align: center;
     font-size: 1.5em;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.6em;
+    color: white;
+    font-weight: bold;
 }
 .contact-me button {
     width: 50%;
@@ -218,6 +236,11 @@ body, html {
     width: 200px;
 }
 
+.certificates img{
+    height: 350px;
+    width: 500px;
+    max-width: 100%;
+}
 
 /*
 * footer ------------------------------------------------------------------------
@@ -234,4 +257,55 @@ footer {
 
 .footer p {
     color: black;
+}
+
+/* aditional styles for buttons and other fancy stuff*/
+.draw-border {
+  box-shadow: inset 0 0 0 4px #58afd1;
+  color: #58afd1;
+  transition: color 0.25s 0.08333s;
+  position: relative;
+}
+.draw-border::before, .draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+.draw-border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+.draw-border::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+.draw-border:hover {
+  color: #ffe593;
+}
+.draw-border:hover::before, .draw-border:hover::after {
+  border-color: #ffe593;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+.draw-border:hover::before {
+  transition-delay: 0s, 0s, 0.25s;
+}
+.draw-border:hover::after {
+  transition-delay: 0s, 0.25s, 0s;
+}
+.btnMain {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem 'Roboto Slab', sans-serif;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
 }

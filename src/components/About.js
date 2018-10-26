@@ -21,7 +21,7 @@ class About extends Component {
                     <h2>Certication</h2>
                     <div className="certificates">
                         <a href= "https://graduation.udacity.com/confirm/X6ANRUX3">
-                            <Image className="resume" />
+                            <Image src="/img/udacity_image.png" />
                         </a>
 
                     </div>
