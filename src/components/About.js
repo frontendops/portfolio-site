@@ -11,23 +11,18 @@ class About extends Component {
         <Fragment>
             <Row className="text-center about" >
                 <Col xs={12} sm={5} >
-                    <Image src="https://auiphoto.files.wordpress.com/2015/09/eiffel-tower-rule-of-thirds.jpg" circle className="profile-img"/>
+                    <Image src="/img/about_image.jpeg" circle className="profile-img"/>
                     <h3>Alejandro Sierra</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliter autem vobis placet. His singulis copiose responderi solet,
-                        sed quae perspicua sunt longa esse non debent. Est igitur officium eius generis, quod nec in bonis ponatur nec in contrariis.
-                         Et nemo nimium beatus est; Restincta enim sitis stabilitatem voluptatis habet, inquit, illa autem voluptas ipsius restinctionis
-                         in motu est. Duo Reges: constructio interrete.
-                        Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus. Nonne videmus quanta perturbatio rerum omnium consequatur,
-                         quanta confusio? Duae sunt enim res quoque, ne tu verba solum putes. Inde sermone vario sex illa a Dipylo stadia confecimus.
-                         Si longus, levis dictata sunt. Ipse Epicurus fortasse redderet, ut Sextus Peducaeus, Sex. Nec vero sum nescius esse utilitatem in historia, non modo voluptatem.
-                        Animi enim quoque dolores percipiet omnibus partibus maiores quam corporis. Hoc est non modo cor non habere, sed ne palatum quidem. Facile est hoc cernere
-                         in primis puerorum aetatulis. Nam, ut saepe iam dixi, in infirma aetate inbecillaque mente vis naturae quasi per caliginem cernitur; Paria sunt igitur.
+                    <p>I love working with technology to make ideas into a reality. Driven by wanting to improve peoples everyday lives with clean User Interfaces, accessibility, and responsive design. To allow every user to experience the web, and not want to immediately press the back button. Originally self-taught the basics of programming but to improve my understanding I enrolled into the Udacity Front-End Developer nanodegree, a 6-month course that is graded by professional developers. Because the course is partnered with AT&T, Google, and GitHub I was able to learn relevant techniques and skills that companies use day to day. My education does not stop there and might never finish, I'm always learning with Udemy courses or working on apps with other developers. In the future, I plan to grow as a full-stack developer and work with mobile applications as well as improve my UI/UX (user interface/user experience) design.
                      </p>
                 </Col>
 
                 <Col xs={12} sm={7} >
-                    <h2>Resume</h2>
-                    <div className="resume">
+                    <h2>Certication</h2>
+                    <div className="certificates">
+                        <a href= "https://graduation.udacity.com/confirm/X6ANRUX3">
+                            <Image className="resume" />
+                        </a>
 
                     </div>
                 </Col>
