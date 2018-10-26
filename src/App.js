@@ -18,7 +18,8 @@ class App extends Component {
             <Router>
                 <div>
                     <Navbar />
-                    <Route exact path="" component={LandingPage} />
+                    <LandingPage />
+                    
                     <Route path="/about" component={About} />
                     <Route path="/projects" component={Projects} />
                     <Route path="/contact" component={Contact} />
