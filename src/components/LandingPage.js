@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import { Grid, Row, Col, Image, Button} from 'react-bootstrap';
+import { Grid, Row, Col, Image, Button, Glyphicon} from 'react-bootstrap';
 import "./LandingPage.css"
 
 class LandingPage extends Component {
@@ -14,7 +14,9 @@ class LandingPage extends Component {
                         <Col xs={12} align="center" className="align-middle">
                             <h2>Front-End Developer</h2>
                             <h3>Alejandro Sierra</h3>
+                            <a href="#start">
                                 <button className="btnMain draw-border">Explore</button>
+                            </a>
                         </Col>
                     </Row>
 
@@ -29,19 +31,19 @@ class LandingPage extends Component {
 
             <Row className="tech">
                 <Col xs={12}md={4}>
-                    <h1>Research</h1>
+                    <h1 id="start">Research</h1>
                     <h3>HTML CSS BOOTSTRAP</h3>
-                    <p>I create content on the web with a focus on reaching the most amount of people. Through researching and prototyping what would work best for your project, This content will be accessible so everyone can be able to experience your site. Clean and user-friendly styling will make it easy for users to know what's going on, and let them do exactly what they want in the shortest amount of time and want them to keep coming back.</p>
+                    <p>I create content on the web with a focus on reaching the most amount of people. Through researching and prototyping what would work best for your project, This content will be accessible so that every one can experience your site. Clean and user-friendly styling will make it easy for users to know what's going on, and let them do exactly what they want in the shortest amount of time and want them to keep coming back.</p>
                 </Col>
                 <Col xs={12}md={4}>
                     <h1>The build</h1>
                     <h3>JS & PHP</h3>
-                    <p>Solving problems is really my main job. From finding a way for a business to keep track of clients, to experimenting with designs to find the most effective way for someone to showcase their best work. Not only this but making sure my code is well written and maintainable so future developers or future me, can figure out how to add on new features is critical. After all, this is part of the work I do and I love the rewarding feeling of making these ideas into reality.</p>
+                    <p>Solving problems is really my main job. From finding a way for a business to keep track of clients, to experimenting with designs to find the most effective way for someone to showcase their best work. Not only this but making sure my code is well written and maintainable so future developers or future me, can figure out how to add on new features. After all, this is part of the work I do and I love the rewarding feeling of making these ideas into reality.</p>
                 </Col>
                 <Col xs={12}md={4}>
                     <h1>Deployment</h1>
                     <h3>React.js Node.js</h3>
-                    <p>No matter what type of application or site you need, I will use the latest technologies to make sure your project is up to date and running smoothly. You can use a preferred hosting service, or if you don't i will help you get set up. Feel free to send me an email if you need to clarify something or want a change during or after the process.</p>
+                    <p>No matter what type of application or site you need, I will use the latest technologies to make sure your project is up to date and running smoothly. You can use a preferred hosting service, or if you don't have one i will help you get set up. Feel free to send me an email if you need to clarify something or want a change during or after the process.</p>
                 </Col>
             </Row>
 
@@ -97,6 +99,10 @@ class LandingPage extends Component {
                 </a>
 
             </div>
+
+            <a href="#top" id="return"><i>
+                 <Glyphicon glyph="chevron-up" />
+            </i></a>
 
         </Grid>
     </Fragment>

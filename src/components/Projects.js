@@ -46,7 +46,7 @@ class Projects extends Component {
             <Grid>
                 <Row>
                     <Col xs={12} sm={8} smOffset={2} >
-                        <h1>Hello World! These are some of the projects ive been working on.</h1>
+                        <h1>Hello World! These are some of the projects i have been working on.</h1>
                     </Col>
                 </Row>
 

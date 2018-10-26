@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default class CustomNavBar extends Component {
   render() {
     return (
-        <Navbar default collapseOnSelect>
+        <Navbar default collapseOnSelect id="top">
             <Navbar.Header>
                 <Navbar.Brand>
                     <Link to="/">Home</Link>
