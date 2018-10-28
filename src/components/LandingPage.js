@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react';
-import { Link } from 'react-router-dom';
 import { Grid, Row, Col, Image, Button, Glyphicon} from 'react-bootstrap';
 import "./LandingPage.css"
 
@@ -86,9 +85,9 @@ class LandingPage extends Component {
                 <h1>Need to know more?</h1>
                 <h3>Dont worry </h3>
 
-                <Link to="/projects"> <Button>Projects</Button> </Link>
+                <Button>Projects</Button>
 
-                <Link to="/about"> <Button>About Me</Button> </Link>
+                <Button>About Me</Button>
 
                 <a href="https://www.linkedin.com/in/alejandro-sierra-9320a1164">
                     <Button>Linked In</Button>
