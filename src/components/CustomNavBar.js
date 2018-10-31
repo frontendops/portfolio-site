@@ -8,14 +8,13 @@ export default class CustomNavBar extends Component {
         <Navbar default collapseOnSelect id="top">
             <Navbar.Header>
                 <Navbar.Brand>
-                    
+
                 </Navbar.Brand>
                 <Navbar.Toggle />
             </Navbar.Header>
 
             <Navbar.Collapse>
                 <Nav pullRight>
-                    <NavItem eventKey={1}>Home</NavItem>
 
                     <NavItem eventKey={2} >Projects</NavItem>
 

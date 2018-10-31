@@ -8,7 +8,7 @@ class Projects extends Component {
              "tech": "JS",
              "description": "Card Matching game that uses vanilla javascript",
              "img": "/img/memory_app.JPEG",
-             "link": "",
+             "link": "http://minimalmvnt.com/memory%20game%20v2/",
              "id": "1",
              "alt":"Man holding phone with memory game"
             },

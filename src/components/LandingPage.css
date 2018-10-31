@@ -36,9 +36,10 @@ body, html {
 }
 
 .stars {
+    margin-top: 3vh;
     display: flex;
     align-items: center;
-    height: 90vh;
+    height: 95vh;
     width: 100%;
     z-index: 0;
     background: #000 url("https://image.ibb.co/mjnygo/stars.png");
