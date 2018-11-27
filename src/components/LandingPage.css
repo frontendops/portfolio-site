@@ -79,6 +79,11 @@ body, html {
 .mountain-paralax {
     background-image: url('/img/star-sky.png');
     height: 50vh;
+
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size:cover;
+
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -128,6 +133,10 @@ body, html {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size:cover;
     background-size: cover;
 }
 
